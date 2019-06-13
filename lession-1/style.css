@@ -1,0 +1,63 @@
+body {
+  padding: 10px;
+  max-width: 35em;
+  background-color: rgba(166, 212, 197, 0.5);
+  border: 2px solid black;
+  font-family: fantasy;
+}
+h1 {
+  color: royalblue;
+  text-shadow: 2px 2px 1px black;
+  text-align: center;
+  font-size: 70px;
+}
+h2 {
+  text-shadow: 1px 1px 1px gray;
+}
+p {
+  line-height: 1.5;
+  text-indent: 0em;
+}
+body p {
+    line-height: 1.8;
+}
+body > p {
+    line-height: 2;
+}
+
+div {
+  color: pink;
+}
+span {
+  color: crimson;
+  text-shadow: 2px 2px 2px grey;
+  border: 1px solid black;
+  background-color: black;
+}
+a:hover,
+a:active,
+a:focus {
+  color: darkred;
+  text-decoration: none;
+}
+.done {
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+[href="https://www.youtube.com/watch?v=tMmUJVBnxMo"] {
+    color: red;
+}
+
+li {
+    background: green;
+}
+
+.todo-list-item {
+    background: red;
+}
+
+#first {
+    background: purple;
+}
+
