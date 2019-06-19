@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+[class^="box"] {
+  margin: 20px;
+  width: 120px;
+  height: 120px;
+  background-color: lightgrey;
+  border-radius: 10%;
+}
+.item {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: black;
+}
+.box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.box-2 .item:nth-child(2) {
+  align-self: flex-end;
+}
+.box-3 {
+  display: flex;
+  justify-content: space-between;
+}
+.box-3 .item:nth-child(2) {
+  align-self: center;
+}
+.box-3 .item:nth-child(3) {
+  align-self: flex-end;
+}
+.box-4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.box-4 .column {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.box-5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box-5 .column {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.box-5 .column:nth-child(2) {
+  justify-content: center;
+}
+
+.box-6 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+}
+.box-6 .column {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
