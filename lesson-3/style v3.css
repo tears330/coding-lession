@@ -16,47 +16,50 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 60px;
 }
-header .logo a {
+header .logo {
   text-decoration: none;
   color: black;
-  margin-left: 60px;
 }
 header .logo span {
   font-size: 20px;
   font-weight: bold;
   margin-left: 5px;
 }
-header .menu nav {
-  width: 300px;
+header .menu-wrapper {
+  display: flex;
 }
-header .menu ul {
+header .menu-wrapper ul {
   display: flex;
   list-style-type: none;
-  padding: 0;
-  justify-content: space-evenly;
 }
-header .menu ul li:last-child {
-  margin-right: -400px;
-}
-header .menu li a {
+header .menu-wrapper li a {
   display: block;
   height: 60px;
   line-height: 60px;
   text-decoration: none;
   color: rgba(53, 52, 52, 0.76);
+  margin-right: 20px;
+  width: 55px;
+  text-align: center;
 }
-header .menu li a:hover {
+header .menu-wrapper li a:hover {
   color: red;
   box-sizing: border-box;
   border-bottom: 2px solid red;
+}
+#login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #login a {
   text-decoration: none;
   color: red;
   font-size: 15px;
   font-weight: bold;
-  margin-right: 60px;
 }
 .section-1 {
   display: flex;
@@ -71,7 +74,8 @@ header .menu li a:hover {
 .section-1 p,
 .section-1 a {
   color: white;
-  margin-left: 200px;
+  margin:0;
+  margin-left:200px;
 }
 .section-1 h1 {
   font-size: 50px;
@@ -80,6 +84,8 @@ header .menu li a:hover {
 .section-1 p {
   font-size: 15px;
   width: 220px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .section-1 a {
   display: block;
@@ -88,4 +94,50 @@ header .menu li a:hover {
   background-color: rgb(199, 61, 61);
   width: 220px;
   font-size: 25px;
+}
+.section-2 {
+  margin:0;
+  padding: 0;
+  width: 100%;
+  color: rgb(60, 60, 61);
+  height: 250px;
+}
+.section-2 nav ul{
+  height: 100%;
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.section-2 nav ul .intro-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  text-align: center;
+}
+.section-2 nav ul li span {
+  font-size: 15px;
+}
+.section-2 nav ul .with-right-border {
+  border-right: 2px solid rgb(112, 112, 114);
+}
+.section-3 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 90 0 0 0;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28px;
+  background-color: rgba(208, 210, 214, 0.76)
+}
+.section-3 h2 {
+  font-weight: normal;
+  color: rgba(53, 52, 52, 0.76)
 }
