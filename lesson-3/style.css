@@ -1,96 +1,228 @@
 html {
   font-size: 12px;
-  background-color: aliceblue;
+  background-color: rgb(252, 252, 252);
   font-family: Helvetica, Arial, sans-serif;
 }
 html,
 body {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 header {
   width: 100%;
   height: 60px;
-  display: block;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 60px;
 }
-.logo {
-  float: left;
-  margin-left: 20px;
-}
-
-.logo h1 a {
-  margin-left: 5px;
+header .logo {
   text-decoration: none;
   color: black;
 }
-
-.menu {
-  float: right;
-  height: 60px;
+header .logo span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+header .menu-wrapper {
+  display: flex;
+}
+header .menu-wrapper ul {
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+}
+header .menu-wrapper li a {
   display: block;
-  font-size: 10px;
-  width: 600px;
-  text-align: center;
-  padding: 0;
-}
-.menu li {
-  margin: 10px;
-}
-nav li {
-  display: inline-block;
-  text-align: center;
-}
-.menu a {
   height: 60px;
+  line-height: 60px;
   text-decoration: none;
   color: rgba(53, 52, 52, 0.76);
-  margin-right: 15px;
+  margin-right: 20px;
+  width: 55px;
+  text-align: center;
 }
-.menu a:hover {
+header .menu-wrapper li a:hover {
   color: red;
+  box-sizing: border-box;
   border-bottom: 2px solid red;
 }
-#login span {
-  font-weight: bold;
-  font-size: 15px;
-  color: red;
-  display: inline-block;
+#login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-section {
-  display: block;
+#login a {
+  text-decoration: none;
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+}
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 650px;
   background: no-repeat center/100% url("image/section1bg.png");
+  background-size: cover;
+  padding-left: 200px;
 }
-.section1 h2 {
+.section-1 h1,
+.section-1 p,
+.section-1 a {
+  color: white;
+  margin: 0;
+}
+.section-1 h1 {
   font-size: 50px;
   font-weight: normal;
-  color: white;
-  position: absolute;
-  top: 220px;
-  left: 200px;
-  display: block;
 }
-.section1 p {
+.section-1 p {
   font-size: 15px;
-  color: white;
-  position: absolute;
-  top: 340px;
-  left: 200px;
   width: 220px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.section-1 a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgb(199, 61, 61);
+  width: 220px;
+  font-size: 25px;
+  padding: 10px 0;
+}
+.section-2 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: rgb(60, 60, 61);
+  height: 250px;
+  display: flex;
+}
+.section-2 .intro-item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-2 .intro-item p {
+  width: 180px;
+  text-align: center;
+  font-size: 15px;
+  border-right: 2px solid rgba(53, 52, 52, 0.76);
+  margin: 0;
+  padding: 0 80px;
+}
+.section-2 .intro-item:last-child > p {
+  border-right: none;
+}
+.section-3 {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(208, 210, 214, 0.76);
+}
+.section-3 h2 {
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(53, 52, 52, 0.76);
+}
+.section-4 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 300px;
+  background: no-repeat center/100% url("image/section4bg.png");
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.section-4 h2,
+.section-4 p {
+  margin: 0px;
+  letter-spacing: 2px;
+  color: rgb(252, 252, 252);
+}
+.section-4 h2 {
+  position: relative;
+}
+.section-4 h2::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 300px;
+  right: 300px;
+  height: 2px;
+  background-color: rgba(132, 133, 134, 0.76);
+}
+.section-4 .select-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+.section-4 .select-wrapper .select-content {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  background-color: white;
+  padding: 5 10px;
+  color: rgba(132, 133, 134, 0.76);
+}
+.section-4 .select-wrapper .option-wrapper {
+  border: 1px solid rgb(199, 61, 61);
+  border-top: none;
+  display: none;
+}
+.section-4 .select-wrapper:hover .option-wrapper {
   display: block;
 }
-
-.section1 a {
-  text-decoration: none;
-  display: block;
-  background-color: rgb(212, 61, 61);
-  color: white;
-  height: 50px;
-  width: 220px;
-  font-size: 28px;
+.section-4 .option-wrapper .option {
+  background-color: rgba(208, 210, 214, 0.76);
+  padding: 5 10px;
+}
+.section-4 .option-wrapper .option:hover {
+  background-color: rgb(199, 61, 61);
+}
+.section-4 .search {
+  width: 150px;
+  padding: 5 10px;
+  background-color: rgb(199, 61, 61);
+}
+.section-5 {
+  margin: 0px;
+  padding: 0px;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  background-color: rgba(208, 210, 214, 0.76);
+}
+.section-5 .activity-info {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+.section-5 .activity-info img {
+  border: 5px solid lightgray;
+}
+.section-5 .activity-info:nth-child(even) {
+  flex-direction: column-reverse;
+}
+.section-5 .activity-content {
   text-align: center;
-  position: absolute;
-  top: 440px;
-  left: 200px;
+}
+.section-5 .activity-content p {
+  color: rgb(60, 60, 61);
 }
