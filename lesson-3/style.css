@@ -63,6 +63,7 @@ header .menu-wrapper li a:hover {
   font-weight: bold;
 }
 .section-1 {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +114,6 @@ header .menu-wrapper li a:hover {
   justify-content: space-around;
 }
 .section-2 .intro-item p {
-  width: 180px;
   text-align: center;
   font-size: 15px;
   border-right: 2px solid rgba(53, 52, 52, 0.76);
@@ -164,12 +164,15 @@ header .menu-wrapper li a:hover {
   left: 300px;
   right: 300px;
   height: 2px;
-  background-color: rgba(132, 133, 134, 0.76);
+  background-color: rgba(244, 246, 248, 0.76);
 }
-.section-4 .select-wrapper {
+.section-4 .search {
   display: flex;
   justify-content: space-around;
   padding: 0 30px;
+}
+.section-4 .select-wrapper {
+  position: relative;
 }
 .section-4 .select-wrapper .select-content {
   display: flex;
@@ -183,6 +186,9 @@ header .menu-wrapper li a:hover {
   border: 1px solid rgb(199, 61, 61);
   border-top: none;
   display: none;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
 }
 .section-4 .select-wrapper:hover .option-wrapper {
   display: block;
@@ -190,11 +196,23 @@ header .menu-wrapper li a:hover {
 .section-4 .option-wrapper .option {
   background-color: rgba(208, 210, 214, 0.76);
   padding: 5 10px;
+  text-align: left;
+}
+.section-4 .select-wrapper .select-content:hover {
+  border: 1px solid rgb(199, 61, 61);
+  border-bottom: none;
 }
 .section-4 .option-wrapper .option:hover {
   background-color: rgb(199, 61, 61);
 }
-.section-4 .search {
+.section-4 .option img {
+  padding-right: 10px;
+  visibility: hidden;
+}
+.section-4 .option-wrapper .option:hover img {
+  visibility: visible;
+}
+.section-4 .search-button {
   width: 150px;
   padding: 5 10px;
   background-color: rgb(199, 61, 61);
@@ -217,7 +235,7 @@ header .menu-wrapper li a:hover {
 .section-5 .activity-info img {
   border: 5px solid lightgray;
 }
-.section-5 .activity-info:nth-child(even) {
+.section-5 .activity-info:nth-child(2) {
   flex-direction: column-reverse;
 }
 .section-5 .activity-content {
