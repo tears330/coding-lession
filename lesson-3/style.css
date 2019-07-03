@@ -442,7 +442,8 @@ header .menu-wrapper li a:hover {
   content: "";
   position: absolute;
   top: 45px;
-  left: 190px;
+  left: 50%;
+  margin-left: -25px;
   width: 50px;
   height: 2px;
   display: block;
@@ -465,13 +466,14 @@ header .menu-wrapper li a:hover {
 .section-7 .join-info h3 {
   font-weight: normal;
   font-size: 20px;
+  margin-top: 0;
 }
 .section-7 .join-info a {
   text-decoration: none;
   color: rgba(66, 68, 68, 0.76);
   display: block;
   text-align: right;
-  margin-top: 20px;
+  margin-top: 30px;
   position: relative;
 }
 .section-7 .join-info a::before {
@@ -496,6 +498,8 @@ header .menu-wrapper li a:hover {
   justify-content: space-between;
 }
 .section-7 .join-form input {
+  padding-top: 5px;
+  padding-left: 10px;
   width: 48%;
   height: 40px;
   margin: 5px 0px;
@@ -512,6 +516,8 @@ header .menu-wrapper li a:hover {
   color: rgba(66, 68, 68, 0.76);
 }
 .section-7 .join-form textarea {
+  padding-top: 10px;
+  padding-left: 10px;
   width: 100%;
   margin: 10px 0;
   background-color: #eee;
@@ -548,6 +554,7 @@ header .menu-wrapper li a:hover {
 }
 .section-8 form {
   padding: 20px 0;
+  display: flex;
 }
 .section-8 img {
   margin: 0 10px;
